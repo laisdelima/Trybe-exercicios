@@ -1,0 +1,51 @@
+div:hover {
+    border: 5px solid rgb(163, 238, 232);
+}
+
+div:nth-of-type(1) {
+    color: rgb(96, 169, 252);
+}
+
+div:nth-of-type(2) {
+    color: rgb(221, 96, 252);
+}
+
+div:nth-of-type(3) {
+    color: rgb(253, 163, 46);
+}
+
+div:nth-of-type(4) {
+    color: rgb(32, 105, 4);
+}
+
+div:nth-of-type(5) {
+    color: rgb(233, 178, 141);
+}
+
+div:nth-of-type(1) > h3 {
+    font-style: oblique;
+}
+
+div:nth-of-type(2) > h3 {
+    text-decoration: underline;
+}
+
+div:nth-of-type(3) > h3 {
+    margin-left: 5px;
+}
+
+div:nth-of-type(4) > h3 {
+    font-size: medium;
+}
+
+div:nth-of-type(5) > h3 {
+    color: rgb(255, 163, 140);
+}
+
+div:nth-of-type(3) {
+    height: 80px;
+}
+
+div:nth-of-type(odd) > h3 {
+    font-style: italic;
+}
