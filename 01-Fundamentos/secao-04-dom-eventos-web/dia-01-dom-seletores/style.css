@@ -21,6 +21,7 @@
   
   .emergency-tasks div {
     height: 198px;
+    padding: 1px;
   }
   .emergency-tasks h3 {
     color: white;
@@ -36,6 +37,7 @@
   
   .no-emergency-tasks div {
     height: 198px;
+    padding: 1px;
   }
   
   .no-emergency-tasks h3 {
