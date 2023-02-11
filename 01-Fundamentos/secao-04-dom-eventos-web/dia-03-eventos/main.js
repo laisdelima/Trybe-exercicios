@@ -11,6 +11,17 @@ const myWebpage = document.getElementById('my-spotrybefy');
 // - Crie uma função que adicione a classe 'tech' ao elemento `li` quando for clicado.
 //  - Deve existir apenas um elemento com a classe 'tech'. Como você faz isso?
 
+const trocaClasse = (event) => {
+  const novaClasse = document.querySelector('tech');
+  novaClasse.classList.remove('tech');
+  event.target.classList.add('tech');
+  input.value = '';
+}
+
+firstLi.addEventListener('click', trocaClasse);
+secondLi.addEventListener('click', trocaClasse);
+thirdLi.addEventListener('click', trocaClasse);
+
 // - Crie uma função que, ao digitar na caixa de texto, altere o texto do elemento
 // com a classe 'tech';
 
