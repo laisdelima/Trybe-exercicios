@@ -100,3 +100,62 @@ switch (chessPiece.toLowerCase()) {
         console.log("peça inválida!");
         break;
     }
+
+// Utilize if/else para escrever um código que converta uma nota dada em porcentagem (de 0 a 100) em conceitos de A a F. Siga as seguintes regras:
+// Porcentagem >= 90 -> A
+// Porcentagem >= 80 -> B
+// Porcentagem >= 70 -> C
+// Porcentagem >= 60 -> D
+// Porcentagem >= 50 -> E
+// Porcentagem < 50 -> F
+// O código deve retornar uma mensagem de erro e encerrar se a nota passada for menor que 0 ou maior que 100.
+
+let nota = 85;
+
+if (nota < 0 || nota > 100) {
+    console.log('Erro, nota inválida.');
+} else if (nota >= 90) {
+    console.log('A');
+} else if (nota >= 80) {
+    console.log('B');
+} else if (nota >= 70) {
+    console.log('C');
+} else if (nota >= 60) {
+    console.log('D');
+} else if (nota >= 50) {
+    console.log('E');
+} else {
+    console.log('F');
+};
+
+// Utilize if/else para escrever um código que defina três números em variáveis e retorne true se pelo menos uma das três for par. Caso contrário, o código deve retornar false.
+// Bônus: use somente um if.
+
+let num1 = 3;
+let num2 = 4;
+let num3 = 5;
+
+if (num1 % 2 === 0 || num2 % 2 === 0 || num3 % 2 === 0) {
+    console.log('true');
+} else {
+    console.log('false');
+}
+
+// Utilize if/else para escrever um código que se inicie com dois valores em duas variáveis diferentes: o custo de um produto e seu valor de venda. A partir dos valores, o código deve calcular o lucro (ou seja, o valor de venda menos o custo do produto) da empresa ao vender mil produtos.
+// Atente para o fato de que um imposto de 20% incide sobre o custo do produto.
+
+// Seu código deve emitir uma mensagem de erro e encerrar caso algum dos valores de entrada seja menor que zero.
+
+// O lucro de um produto é o resultado da subtração do valor de venda pelo custo e deve considerar que o imposto de 20% faz parte do valor de custo.
+
+let valorCusto = 245;
+let valorVenda = 400;
+
+// imposto de 20% = 1 + 0,2 = 1,2.
+if (valorCusto < 0 || valorVenda < 0) {
+    console.log('Erro, valor incompatível!');
+} else {
+    let valorCustoTotal = valorCusto * 1.2;
+    let lucroTotalEmpresa = (valorVenda - valorCustoTotal) * 1000;
+    console.log(lucroTotalEmpresa);
+}
