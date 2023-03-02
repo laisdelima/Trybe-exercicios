@@ -1,65 +1,26 @@
-let order = {
-    name: 'Rafael Andrade',
-    phoneNumber: '11-98763-1416',
-    address: {
-      street: 'Rua das Flores',
-      number: '389',
-      apartment: '701',
-    },
-    order: {
-      pizza: {
-        marguerita: {
-          amount: 1,
-          price: 25,
-        },
-        pepperoni: {
-          amount: 1,
-          price: 20,
-        },
-      },
-      drinks: {
-        coke: {
-          type: 'Coca-Cola Zero',
-          price: 10,
-          amount: 1,
-        },
-      },
-      delivery: {
-        deliveryPerson: 'Ana Silveira',
-        price: 5,
-      },
-    },
-    payment: {
-      total: 60,
-    },
+let info = {
+    personagem: 'Margarida',
+    origem: 'Pato Donald',
+    nota: 'Namorada do personagem principal nos quadrinhos do Pato Donald',
   };
-  
-// Complete a função customerInfo() para que seu retorno seja similar a 'Olá, Ana Silveira, entrega para: Rafael Andrade, Telefone: 11-98763-1416, R. Rua das Flores, Nº: 389, AP: 701'.
 
-// De olho na dica 👀: Note que o parâmetro da função já está sendo passado na chamada da função.
+/*   Imprima no console uma mensagem de boas-vindas para a personagem acima, incluindo seu nome. Use a sintaxe meuObjeto.chave. */
 
-  function customerInfo(order) {
-    let deliveryPersonName = order.order.delivery.deliveryPerson;
-    let customerName = order.name;
-    let phoneNumber = order.phoneNumber;
-    let address = 'address';
-    let addressStreet = order[address].street;
-    let addressNumber = order[address].number;
-    let addressApt = order[address].apartment;
+console.log("Bem-vinda, " + info.personagem);
 
-    console.log(`Olá, ${deliveryPersonName}, entrega para: ${customerName}, Telefone: ${phoneNumber}, R. ${addressStreet}, Nº: ${addressNumber}, AP: ${addressApt}`);
-  }
-  
-  customerInfo(order);
-  
-  function orderModifier(order) {
-    let newPersonsName = order.name = 'Luiz Silva';
-    let newTotalOrder = order.payment.total;
-    newTotalOrder = 50;
-    let pizzasFlavour = Object.keys(order.order.pizza);
-    let typeCoke = order.order.drinks.coke.type;
+/* Insira no objeto uma nova propriedade com o nome de chave ‘recorrente’ e o valor ‘Sim’ e, em seguida, imprima o objeto no console. Use a sintaxe meuObjeto['chave'] = valor. */ 
 
-    console.log(`Olá, ${newPersonsName}, o valor total de seu pedido de ${pizzasFlavour[0]}, ${pizzasFlavour[1]} e ${typeCoke} é R$ ${newTotalOrder},00.`);
-  }
-  
-  orderModifier(order);
+info['recorrente'] = 'Sim';
+console.log(info);
+
+/* Faça um for/in que mostre todas as chaves do objeto. */ 
+
+for (let keys in info) {
+    console.log(keys);
+}
+
+/* Faça um novo for/in, mas agora mostre todos os valores das chaves do objeto. */
+
+for (let values in info) {
+    console.log(info[values]);
+}
