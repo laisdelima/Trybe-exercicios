@@ -1,3 +1,5 @@
+// Parte II - Pedido de clientes
+
 const order = {
     name: 'Rafael Andrade',
     phoneNumber: '11-98763-1416',
@@ -34,6 +36,8 @@ const order = {
     },
   };
   
+  // Complete a função customerInfo() para que seu retorno seja similar a 'Olá Ana Silveira, entrega para: Rafael Andrade, Telefone: 11-98763-1416, R. Rua das Flores, Nº: 389, AP: 701'.
+
   const customerInfo = (order) => {
     let deliveryPerson = order.order.delivery.deliveryPerson;
     let person = order.name;
@@ -47,6 +51,10 @@ const order = {
   
   customerInfo(order);
   
+// Complete a função orderModifier() para que seu retorno seja similar a 'Olá Luiz Silva, o total do seu pedido de marguerita, pepperoni e Coca-Cola Zero é R$ 50,00.';
+  // Modifique o nome da pessoa compradora para Luiz Silva;
+  // Modifique o valor total da compra para R$ 50,00.
+
   const orderModifier = (order) => {
     let newPerson = order.name = 'Luis Silva';
     let pizzasFlavour = Object.keys(order.order.pizza);
@@ -57,3 +65,4 @@ const order = {
   };
   
   orderModifier(order);
+  
