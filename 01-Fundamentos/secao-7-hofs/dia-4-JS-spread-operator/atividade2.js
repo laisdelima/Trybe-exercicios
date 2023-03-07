@@ -16,10 +16,7 @@ const user = {
     squadInitials: 'RLL',
   };
 
-  const allData = {
-    ...user,
-    ...jobInfos,
-}
+  const allData = { ...user, ...jobInfos };
 
 const { name, age, nationality, profession, squad, squadInitials } = allData;
 
