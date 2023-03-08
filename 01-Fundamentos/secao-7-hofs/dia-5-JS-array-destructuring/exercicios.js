@@ -3,8 +3,8 @@
 
 const myList = [5, 2, 3];
 
-reverse();
-swap();
+const swap = ((a, b, c) => c - a);
+console.log(myList);
 
 // Exercício 2
 // Suponha que você esteja trabalhando em projeto de um site de carros, onde cada carro é representado dentro de um array. Então sua liderança pede que seja mudado o formato de array para objeto. Para isso, crie uma função chamada toObject que, dada uma lista, retorna um objeto representando o carro:
@@ -57,3 +57,14 @@ const moreStudents = [
   const [] = moreStudents;
 
 console.log(student1, student2, student3, student4, student5);
+
+
+
+function swap(x, y) {
+  let t = x;
+  x = y;
+  y = t;
+  return [x, y];
+}
+
+console.log(swap(2, 3));
