@@ -51,5 +51,24 @@ Aqui estão todos os exercícios realizados por _[mim](https://linkedin.com/in/l
 
 - [X] 6-1: _Fluxo de exceções e manipulação de objetos_
 - [X] 6-2: _Primeiros passos em Jest_
-- [ ] 6-3: _Matchers e cobertura de código_   
-- [ ] 6-4: _Projeto - JavaScript Testes Unitários_
+- [X] 6-3: _Matchers e cobertura de código_   
+- [X] 6-4: _Projeto - JavaScript Testes Unitários_
+
+##### Bloco 7: Higher Order Functions do JavaScript ES6
+
+- [X] 7-1: _Introdução a Higher Order Functions_
+- [X] 7-2: _Higher Order Functions - sort e map_
+- [X] 7-3: _Higher Order Functions - filter e reduce_   
+- [X] 7-4: _JavaScript ES6 - spread operator, rest parameters e object destructuring_
+- [X] 7-5: _Array destructuring, Default destructuring, Object property shorthand e default parameters_   
+- [X] 7-6: _Projeto - Zoo Functions_
+
+## Front-end
+
+##### Bloco 1: Introdução ao Front-end e JavaScript assíncrono
+
+- [ ] 1-1: _Ambiente de desenvolvimento_
+- [ ] 1-2: _JavaScript Assíncrono - Promises e fet_
+- [ ] 1-3: _Prática - Casa de câmbio_
+- [ ] 1-4: _Async, await e testes assíncronos_
+- [ ] 1-5: _Projeto - Carrinho de compras_
