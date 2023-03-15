@@ -3,8 +3,8 @@
 
 const myList = [5, 2, 3];
 
-reverse();
-swap();
+const swap = ([a, b, c]) => [c, b, a];
+
 
 // Exercício 2
 // Suponha que você esteja trabalhando em projeto de um site de carros, onde cada carro é representado dentro de um array. Então sua liderança pede que seja mudado o formato de array para objeto. Para isso, crie uma função chamada toObject que, dada uma lista, retorna um objeto representando o carro:
@@ -13,12 +13,14 @@ const palio = ['Palio', 'Fiat', 2019];
 const shelbyCobra = ['Shelby Cobra', 'Ford', 1963];
 const chiron = ['Chiron', 'Bugatti', 2016];
 
-// escreva toObject abaixo
+const toObject = ([name, brand, year]) => ({ name, brand, year });
+console.log(toObject(palio));
 
 // Exercício 3
 // Escreva uma função greet que, dado o nome de uma pessoa, retorna uma mensagem de cumprimento. Um parâmetro adicional pode ser passado para alterar o cumprimento utilizado:
 
-// escreva greet abaixo
+const greet = (nome, cumprimento) => `${cumprimento}, ${nome}!`;
+console.log(greet('John', 'Hello'));
 
 // Retornos esperados:
 console.log(greet('John')); // 'Hi John'
@@ -39,7 +41,7 @@ const student1 = {
     age: 20,
   }
   
-  // escreva 'getLastName' abaixo para receber os objetos e retornar sua propriedade `lastName`
+  const getLastName = ( {lastName = 'lastName não preenchido.'} ) => lastName;
   
   console.log(getLastName(student1));
   console.log(getLastName(student2));
@@ -54,6 +56,6 @@ const moreStudents = [
   ];
 
   // Escreva seu código aqui
-  const [] = moreStudents;
+  const [student1, [student2, student3], [student4, student5]] = moreStudents;
 
 console.log(student1, student2, student3, student4, student5);
