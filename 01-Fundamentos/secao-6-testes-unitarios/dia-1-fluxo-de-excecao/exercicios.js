@@ -114,17 +114,46 @@ const clients = [
         const cep = `CEP: ${person.address.cep}`;
         return `${receivedName}. ${fullAddress}. ${cep}`;
     } catch (error) {
-        throw error.message;
+        return error.message;
     }
   };
   console.log(findPersonByName('Ana Santos'));
   console.log(findPersonByName('Rafael Ferreira'));
   console.log(findPersonByName('Laís de Lima'));
-  
+
   const findPersonByPosition = (position) => {
-    // seu código aqui
+    try {
+        const person = clients[position];
+        if (!person) {
+            throw new Error('Posição inválida, tente novamente');
+        }
+        return `Cliente: ${person.name}. email: ${person.email}.`
+    } catch (error) {
+        return error.message;
+    }
   };
-  
+  console.log(findPersonByPosition(2));
+  console.log(findPersonByPosition(0));
+  console.log(findPersonByPosition(14));
+
+  const validateArray = (arr) => {
+      if (arr.length === 0) {
+        throw new Error('Ops, nenhuma pessoa mora nesse estado, tente outro');
+      }
+  };
   const findPeopleByState = (state) => {
-    // seu código aqui
-  };
+    try {
+        let person = [];
+        for (let index = 0; index < clients.length; index += 1) {
+            if (clients[index].address.state === state) {
+                person.push(clients[index].name);
+            }
+        }
+        validateArray(person);
+        return person;
+    } catch (error) {
+        return error.message;
+    }
+};
+console.log(findPeopleByState('BA'));
+console.log(findPeopleByState('RS'));
