@@ -68,23 +68,60 @@ const countries = [
   ];
 
   // 1 - Calcule a quantidade total da população de todos os países.
-  const popResult = 120797034;
+  // const popResult = 120797034;
   const getPopulation = () => countries.reduce((acc, curr) => acc + curr.population, 0);
   console.log(getPopulation());
 
   // 2 - Calcule a área total de todos os países.
-  const areaResult = 4311757;
+  // const areaResult = 4311757;
   const getTotalArea = () => countries.reduce((acc, curr) => acc + curr.area, 0);
   console.log(getTotalArea());
 
 // 🚀 3 - Encontre o país com o maior nome.
-const expectedResult = {
-    name: 'American Samoa',
-    region: 'Oceania',
-    currencies: [{ code: 'USD', name: 'United States Dollar' }],
-    capital: 'Pago Pago',
-    population: 55197,
-    area: 199
-  }
+// const expectedResult = {
+//     name: 'American Samoa',
+//     region: 'Oceania',
+//     currencies: [{ code: 'USD', name: 'United States Dollar' }],
+//     capital: 'Pago Pago',
+//     population: 55197,
+//     area: 199
+//   }
   const longestName = () => countries.reduce((acc, curr) => acc.name.length > curr.name.length ? acc : curr);
   console.log(longestName());
+
+// 🚀 4 - Retorne a quantidade de vezes que a letra a maiúscula ou minúscula aparece no array de nomes.
+  // De olho na dica 👀: faça com que o array de nomes seja um array de letras.
+
+  const names = [
+    'Aanemarie', 'Adervandes', 'Akifusa',
+    'Abegildo', 'Adicellia', 'Aladonata',
+    'Abeladerco', 'Adieidy', 'Alarucha',
+  ];
+  // const expectedResult = 20;
+
+  const allLetters = names.join('').toLowerCase().split('');
+  const countA = () => allLetters.reduce((acc, curr) => { return curr === 'a' ? acc += 1 : acc }, 0);
+  console.log(countA());
+
+// 🚀 5 - Crie um array de objetos e calcule a média de notas. Utilize as constantes students e grades para criar um array de objetos e calcule a média da nota das pessoas estudantes:
+
+// O index 0 do array `students` equivale ao index 0 do array `grades`
+const students = ['Pedro Henrique', 'Miguel', 'Maria Clara'];
+const grades = [[9, 8, 10, 7, 5], [10, 9, 9, 10, 8], [10, 7, 10, 8, 9]];
+
+// const expectedResult = [
+//  { name: 'Pedro Henrique', average: 7.8 },
+//  { name: 'Miguel', average: 9.2 },
+//  { name: 'Maria Clara', average: 8.8 },
+// ];
+
+const studentAverage = () => {
+    return nameAndAverage = students.map((student, index) => (
+      {
+        name: student,
+        average: (grades[index].reduce((acc, curr) => acc + curr, 0)) / grades[index].length,
+      }
+    ));
+  }
+
+console.log(studentAverage());
