@@ -99,17 +99,17 @@ Aqui estão todos os exercícios realizados por _[mim](https://linkedin.com/in/l
 ##### Bloco 6: Testes automatizados com React Testing Library
 
 - [X] 1-1: _Primeiros Passos_
-- [ ] 1-2: _RTL - Mocks e Inputs_
-- [ ] 1-3: _RTL - Testando React Router_
-- [ ] 1-4: _Projeto - Testes em React_
+- [X] 1-2: _RTL - Mocks e Inputs_
+- [X] 1-3: _RTL - Testando React Router_
+- [X] 1-4: _Projeto - Testes em React_
 
 ##### Bloco 7: Gerenciamento de estado com Redux
 
-- [ ] 1-1: _Introdução ao Redux - O estado global da aplicação_
-- [ ] 1-2: _Usando o Redux no React_
-- [ ] 1-3: _Usando o Redux no React - Prática_
-- [ ] 1-4: _Usando o Redux no React - Actions Assíncrono_
-- [ ] 1-5: _Testes em React-Redux_
+- [X] 1-1: _Introdução ao Redux - O estado global da aplicação_
+- [X] 1-2: _Usando o Redux no React_
+- [X] 1-3: _Usando o Redux no React - Prática_
+- [X] 1-4: _Usando o Redux no React - Actions Assíncrono_
+- [X] 1-5: _Testes em React-Redux_
 - [ ] 1-6: _Projeto - Trybe Wallet_
 
 ##### Bloco 8: Projeto Jogo de Trivia
