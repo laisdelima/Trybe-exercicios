@@ -1,12 +1,20 @@
 import EmailList from "./components/EmailList";
 import './App.css';
 import { READ, UNREAD } from './constants';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import messagesList from "./data/messages";
 import Buttons from "./components/Buttons";
 
 function App() {
   const [msg, setMsg] = useState(messagesList);
+
+  useEffect(() => {
+    const isAllMsgsRead = msg.every(({ status }) => status === READ);
+
+    if (isAllMsgsRead) {
+      alert('Parabéns, você leu todas as mensagens!');
+    }
+  }, [msg]);
 
   const setMessageStatus = (msgId, newStatus) => {
     const updateMsgs = msg.map((currMsg) => {
