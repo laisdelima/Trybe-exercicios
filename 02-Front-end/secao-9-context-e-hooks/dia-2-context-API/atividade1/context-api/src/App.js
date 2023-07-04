@@ -1,22 +1,14 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Footer from './components/Footer';
 import Header from './components/Header';
-import ThemeContext from './context/ThemeContext';
+import ThemeProvider from './context/ThemeProvider';
 import './App.css';
 
 export default function App() {
-  const [themeColor, setThemeColor] = useState('dark');
-
-  function toggleTheme() {
-    setThemeColor(themeColor === 'dark' ? 'light' : 'dark');
-  }
-
   return (
-    <ThemeContext.Provider value={{ color: themeColor, toggleTheme }} >
-      <div className={`App ${themeColor}`}>
-        <Header />
-        <Footer />
-      </div>
-    </ThemeContext.Provider>
+    <ThemeProvider>
+      <Header />
+      <Footer />
+    </ThemeProvider>
   )
 }
