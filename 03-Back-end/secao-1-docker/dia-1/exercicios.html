@@ -1,0 +1,42 @@
+// Baixe a imagem utilizando a tag: stable-slim, que é uma versão reduzida da distribuição.
+comando: docker pull debian:stable-slim
+
+// Após baixar a imagem para seu computador local, crie e execute um container no modo interativo utilizando essa imagem como referência — não esqueça referenciar a tag.
+comando: docker container run -it debian:stable-slim
+saída: root@c06181a43232:/#
+
+// No terminal, você deve conseguir rodar o comando cat /etc/*-release, que vai retornar os dados da distribuição Debian que está sendo rodada dentro do container.
+comando (após a saída): cat /etc/*-release
+retorno: PRETTY_NAME="Debian GNU/Linux 12 (bookworm)"
+NAME="Debian GNU/Linux"
+VERSION_ID="12"
+VERSION="12 (bookworm)"
+VERSION_CODENAME=bookworm
+ID=debian
+HOME_URL="https://www.debian.org/"
+SUPPORT_URL="https://www.debian.org/support"
+BUG_REPORT_URL="https://bugs.debian.org/"
+
+// Encerre o terminal.
+comando: exit
+
+// Verifique na sua lista de contêiners qual contêiner se refere ao exercício que acabou de praticar.
+comando: docker ps -
+retorno: CONTAINER ID = c06181a43232
+
+// Inicie o mesmo container novamente, sem criar outro. Valide se ele está ativo na lista de containers.
+comando: docker start c06181a43232
+validar status: docker ps -l
+
+// Retome o container que foi criado anteriormente neste exercício.
+comando: docker attach c06181a43232
+
+// Rode o comando cat /etc/debian_version que deve retornar a versão atual do sistema do container.
+comando: cat /etc/debian_version
+retorno: 12.1
+
+// Encerre o terminal.
+comando: exit
+
+// Remova somente o container criado para esse exercício.
+comando: docker container rm c06181a43232
