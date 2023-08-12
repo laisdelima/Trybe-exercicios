@@ -114,16 +114,33 @@ Aqui estão todos os exercícios realizados por _[mim](https://linkedin.com/in/l
 
 ##### Bloco 8: Projeto Jogo de Trivia
 
-- [ ] 1-1: _Projeto - Jogo de Trivia_
+- [X] 1-1: _Projeto - Jogo de Trivia_
 
 ##### Bloco 9: Context API e React Hooks
 
-- [ ] 1-1: _React Hooks - useState e useEffect_
-- [ ] 1-2: _Context API_
-- [ ] 1-3: _Custom Hooks_
-- [ ] 1-4: _Projeto - StarWars Datable com Context API e Hooks_
+- [X] 1-1: _React Hooks - useState e useEffect_
+- [X] 1-2: _Context API_
+- [X] 1-3: _Custom Hooks_
+- [X] 1-4: _Projeto - StarWars Datable com Context API e Hooks_
 
 
 ##### Bloco 10: Projeto App de Receitas
 
-- [ ] 1-1: _Projeto - App de Receitas_
+- [X] 1-1: _Projeto - App de Receitas_
+
+## Back-end
+
+##### Bloco 1: Docker: utilizando containers
+
+- [X] 1-1: _Utilizando containers - Docker_
+- [X] 1-2: _Manipulando imagens no Docker_
+- [X] 1-3: _Orquestrando containers com Docker Compose_
+- [X] 1-4: _Projeto - Docker Todo-List_
+
+##### Bloco 2: Introdução à SQL
+
+- [X] 1-1: _Banco de Dados SQL_
+- [ ] 1-2: _Encontrando dados em um banco de dados_
+- [ ] 1-3: _Filtrando dados de forma específica_
+- [ ] 1-4: _Manipulando tabelas_
+- [ ] 1-5: _Projeto - All For One_
