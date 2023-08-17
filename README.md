@@ -140,7 +140,7 @@ Aqui estão todos os exercícios realizados por _[mim](https://linkedin.com/in/l
 ##### Bloco 2: Introdução à SQL
 
 - [X] 1-1: _Banco de Dados SQL_
-- [ ] 1-2: _Encontrando dados em um banco de dados_
-- [ ] 1-3: _Filtrando dados de forma específica_
-- [ ] 1-4: _Manipulando tabelas_
-- [ ] 1-5: _Projeto - All For One_
+- [X] 1-2: _Encontrando dados em um banco de dados_
+- [X] 1-3: _Filtrando dados de forma específica_
+- [X] 1-4: _Manipulando tabelas_
+- [X] 1-5: _Projeto - All For One_
