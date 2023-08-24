@@ -139,8 +139,15 @@ Aqui estão todos os exercícios realizados por _[mim](https://linkedin.com/in/l
 
 ##### Bloco 2: Introdução à SQL
 
-- [X] 1-1: _Banco de Dados SQL_
-- [X] 1-2: _Encontrando dados em um banco de dados_
-- [X] 1-3: _Filtrando dados de forma específica_
-- [X] 1-4: _Manipulando tabelas_
-- [X] 1-5: _Projeto - All For One_
+- [X] 2-1: _Banco de Dados SQL_
+- [X] 2-2: _Encontrando dados em um banco de dados_
+- [X] 2-3: _Filtrando dados de forma específica_
+- [X] 2-4: _Manipulando tabelas_
+- [X] 2-5: _Projeto - All For One_
+
+##### Bloco 3: Funções SQL, JOINs e Normalização
+
+- [X] 3-1: _Funções mais usadas no SQL_
+- [X] 3-2: _Descomplicando JOINs_
+- [X] 3-3: _Transformando ideias em um modelo de banco de dados_
+- [X] 3-4: _Aula ao vivo + Projeto - One For All_
