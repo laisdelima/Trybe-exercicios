@@ -151,3 +151,12 @@ Aqui estão todos os exercícios realizados por _[mim](https://linkedin.com/in/l
 - [X] 3-2: _Descomplicando JOINs_
 - [X] 3-3: _Transformando ideias em um modelo de banco de dados_
 - [X] 3-4: _Aula ao vivo + Projeto - One For All_
+
+##### Bloco 4: Introdução ao desenvolvimento Web com Node.js
+
+- [X] 4-1: _Node.js: Runtime assíncrono_
+- [X] 4-2: _Node.js: API Rest com Express_
+- [X] 4-3: _Node.js: Testes de integração_
+- [ ] 4-4: _Node.js: Express e Middlewares_
+- [ ] 4-5: _Node.js: Express e MySQL_
+- [ ] 4-6: _Projeto: Talker Manager_
