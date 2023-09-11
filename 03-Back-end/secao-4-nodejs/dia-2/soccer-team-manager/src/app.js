@@ -89,4 +89,28 @@ app.get('/teams/:id', (req, res) => {
 //     }
 //   ]
 // }
+
+// para deletar
+
+app.delete('/teams/:id', (req, res) => {
+  const { id } = req.params;
+  const arrayPosition = teams.findIndex((team) => team.id === Number(id));
+  teams.splice(arrayPosition, 1);
+
+  res.status(200).end();
+});
+
+// no Thunder Client:
+// DELETE: http://localhost:3001/teams/1
+// retorno:
+// {
+//   "teams": [
+//     {
+//       "id": 2,
+//       "name": "Clube Atlético Mineiro",
+//       "initials": "CAM"
+//     }
+//   ]
+// }
+
 module.exports = app;
