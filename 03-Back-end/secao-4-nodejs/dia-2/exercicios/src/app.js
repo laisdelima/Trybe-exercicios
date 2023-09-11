@@ -80,4 +80,19 @@ app.delete('/movies/:id', async (req, res) => {
   }
 });
 
+// bônus
+app.get('/movies/search', async (req, res) => {
+  try {
+    const { q } = req.query;
+    const movies = await readFile();
+
+    if(q) {
+      const filteredMovies = movies.filter(({ movie }) => movie.includes(q));
+      return res.status(200).json(filteredMovies);
+    }
+    res.status(200).end();
+  } catch (err) {
+    res.status(500).send({ message: err.message });
+  }
+});
 module.exports = app;
