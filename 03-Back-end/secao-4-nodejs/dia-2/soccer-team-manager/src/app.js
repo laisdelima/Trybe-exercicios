@@ -39,4 +39,54 @@ app.post('/teams', (req, res) => {
 
 // foi utilizado o Thunder Client para testar as rotas, com os métodos GET e POST, inicialmente.
 
+// método PUT: utilizado quando queremos alterar um recurso. Ele também recebe dados pelo corpo da requisição.
+app.put('/teams/:id', (req, res) => {
+  const { id } = req.params;
+  const { name, initials } = req.body;
+
+  const updateTeam = teams.find((team) => team.id === Number(id));
+
+  if (!updateTeam) {
+    return res.status(404).json({ message: 'Team not found' });
+  }
+
+  updateTeam.name = name;
+  updateTeam.initials = initials;
+  res.status(200).json({ updateTeam });
+});
+
+// listando um time à minha escolha
+app.get('/teams/:id', (req, res) => {
+  const team = teams.find(({ id }) => id === Number(req.params.id));
+  res.status(200).json(team);
+});
+// no Thunder Client:
+// PUT: http://localhost:3001/teams/3
+// BODY: (JSON) 
+// {
+//   "id": 3,
+//   "name": "Clube de Regatas Vasco da Gama",
+//   "initials": "CRVG"
+// }
+// GET: http://localhost:3001/teams
+// retorno:
+// {
+//   "teams": [
+//     {
+//       "id": 1,
+//       "name": "São Paulo Futebol Clube",
+//       "initials": "SPF"
+//     },
+//     {
+//       "id": 2,
+//       "name": "Clube Atlético Mineiro",
+//       "initials": "CAM"
+//     },
+//     {
+//       "id": 3,
+//       "name": "Clube de Regatas Vasco da Gama",
+//       "initials": "CRVG"
+//     }
+//   ]
+// }
 module.exports = app;
