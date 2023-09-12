@@ -1,4 +1,6 @@
 const express = require('express');
+require('express-async-errors');
+const morgan = require('morgan');
 const validateTeam = require('./middlewares/validateTeam');
 const existingId = require('./middlewares/existingId');
 const teams = require('./utils/teams');
@@ -8,8 +10,20 @@ const apiCredentials = require('./middlewares/apiCredentials');
 
 let nextId = 3;
 
+app.use(morgan('dev'));
 app.use(express.json()); // cria um middleware que processa corpos de req em JSON. O resultado é armazenado em req.body, onde body é uma propriedade do objeto req. É necessário para que o método POST consiga ler as informações passadas pelo corpo da requisição.
 app.use(apiCredentials);
+
+
+app.use((req, _res, next) => {
+  console.log('req.method:', req.method);
+  console.log('req.path:', req.path);
+  console.log('req.params:', req.params);
+  console.log('req.query:', req.query);
+  console.log('req.headers:', req.headers);
+  console.log('req.body:', req.body);
+  next();
+});
 
 app.get('/teams', (req, res) => res.json(teams));
 
