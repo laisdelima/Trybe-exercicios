@@ -6,10 +6,6 @@ const teams = require('./utils/teams');
 const app = express();
 
 let nextId = 3;
-// const teams = [
-//   { id: 1, nome: 'São Paulo Futebol Clube', sigla: 'SPF' },
-//   { id: 2, nome: 'Sociedade Esportiva Palmeiras', sigla: 'PAL' },
-// ];
 
 app.use(express.json());
 
@@ -53,15 +49,6 @@ app.get('/teams/:id', (req, res) => {
   }
 });
 
-// const validateTeam = (req, res, next) => {
-//   const requiredProperties = ['nome', 'sigla'];
-//   if (requiredProperties.every((property) => property in req.body)) {
-//     next(); // Chama o próximo middleware
-//   } else {
-//     res.sendStatus(400); // Ou já responde avisando que deu errado
-//   }
-// };
-
 // Arranja os middlewares para chamar validateTeam primeiro
 app.post('/teams', validateTeam, (req, res) => {
   const team = { id: nextId, ...req.body };
@@ -97,15 +84,6 @@ app.delete('/teams/:id', (req, res) => {
 // Para fixar
 
 // 1. 🚀 Crie um middleware existingId para garantir que o id passado como parâmetro na rota GET /teams/:id existe no objeto teams. Refatore essa rota para usar o middleware.
-
-// const existingId = (req, res, next) => {
-//   const id = Number(req.params.id);
-
-//   if (teams.some((team) => team.id === id)) {
-//     return next(); // usando return para evitar que duas respostas sejam enviadas. Assim, ou se chama o next() ou se envia a resposta res.status. Alternativa: usar um else.
-//   }
-//   res.sendStatus(404);
-// };
 
 app.get('/teams/:id', existingId, (req, res) => {
   const id = Number(req.params.id);
