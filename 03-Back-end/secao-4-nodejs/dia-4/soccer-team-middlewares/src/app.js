@@ -8,7 +8,7 @@ const apiCredentials = require('./middlewares/apiCredentials');
 
 let nextId = 3;
 
-app.use(express.json());
+app.use(express.json()); // cria um middleware que processa corpos de req em JSON. O resultado é armazenado em req.body, onde body é uma propriedade do objeto req. É necessário para que o método POST consiga ler as informações passadas pelo corpo da requisição.
 app.use(apiCredentials);
 
 app.get('/teams', (req, res) => res.json(teams));
@@ -53,6 +53,12 @@ app.get('/teams', (req, res) => res.json(teams));
 
 // Arranja os middlewares para chamar validateTeam primeiro
 app.post('/teams', validateTeam, (req, res) => {
+  if (
+    !req.teams.teams.includes(req.body.sigla)
+    && teams.every((team) => team.sigla !== req.body.sigla)
+  ) {
+    return res.status(422).json({ message: 'Já existe um time com essa sigla' });
+  }
   const team = { id: nextId, ...req.body };
   teams.push(team);
   nextId += 1;
