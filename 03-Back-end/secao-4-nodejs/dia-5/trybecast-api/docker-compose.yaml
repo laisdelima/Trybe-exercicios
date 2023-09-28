@@ -19,7 +19,7 @@ services:
     ports:
       # Expõe a porta padrão da aplicação: altere aqui caso use outra porta
       # na notação porta_de_fora:porta_de_dentro
-      - 3001:3001
+      - 3000:3000
     environment:
       # Aqui setamos nossas variáveis de ambiente - não se preocupe, mais para frente, ainda nesse dia, temos
       # uma seção inteira destinada a explicá-las!
