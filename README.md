@@ -157,6 +157,15 @@ Aqui estão todos os exercícios realizados por _[mim](https://linkedin.com/in/l
 - [X] 4-1: _Node.js: Runtime assíncrono_
 - [X] 4-2: _Node.js: API Rest com Express_
 - [X] 4-3: _Node.js: Testes de integração_
-- [ ] 4-4: _Node.js: Express e Middlewares_
-- [ ] 4-5: _Node.js: Express e MySQL_
-- [ ] 4-6: _Projeto: Talker Manager_
+- [X] 4-4: _Node.js: Express e Middlewares_
+- [X] 4-5: _Node.js: Express e MySQL_
+- [X] 4-6: _Projeto: Talker Manager_
+
+##### Bloco 5: Arquitetura de software: model, service e controller
+
+- [X] 5-1: _Arquitetura de Software: camada model_
+- [X] 5-2: _Arquitetura de Software: refatorando camada model_
+- [X] 5-3: _Arquitetura de Software: camada service_
+- [X] 5-4: _Arquitetura de Software: refatorando camada service_
+- [X] 5-5: _Arquitetura de Software: refatorando camada controller_
+- [X] 5-6: _Projeto - Store Manager_
