@@ -6,6 +6,11 @@ const insert = (person) => conn.execute(
   [person.firstName, person.lastName, person.email, person.phone],
 ); // prepared statement. Serve como um molde para as consultas SQL. Os parâmetros das prepared statements não devem ser vinculadas diretamente na consulta SQL (utilizando concatenação de string, por exemplo).
 
+const findAll = () => conn.execute('SELECT * FROM people');
+const findById = (id) => conn.execute('SELECT * FROM people WHERE id = ?', [id]);
+
 module.exports = {
   insert,
+  findAll,
+  findById,
 };
