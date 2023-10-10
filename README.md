@@ -169,3 +169,11 @@ Aqui estão todos os exercícios realizados por _[mim](https://linkedin.com/in/l
 - [X] 5-4: _Arquitetura de Software: refatorando camada service_
 - [X] 5-5: _Arquitetura de Software: refatorando camada controller_
 - [X] 5-6: _Projeto - Store Manager_
+
+##### Bloco 6: Node.js: ORM e autenticação
+
+- [X] 6-1: _ORM: interface da aplicação com o banco de dados_
+- [X] 6-2: _ORM: associations 1:1 e 1:N_
+- [X] 6-3: _ORM: associations N:N e transactions_
+- [X] 6-4: _JWT (JSON Web Token)_
+- [X] 6-5: _Projeto: API de Blogs_
