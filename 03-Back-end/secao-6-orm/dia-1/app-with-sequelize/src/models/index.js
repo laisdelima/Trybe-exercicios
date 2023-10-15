@@ -1,5 +1,7 @@
 'use strict';
 
+// o arquivo index estabelece uma instância de conexão entre os arquivos presentes na pasta model e o banco de dados relacional utilizado.
+
 const fs = require('fs');
 const path = require('path');
 const Sequelize = require('sequelize');

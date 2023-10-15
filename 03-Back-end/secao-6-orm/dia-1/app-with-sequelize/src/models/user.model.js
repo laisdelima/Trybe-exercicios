@@ -2,6 +2,7 @@ const UserModel = (sequelize, DataTypes) => {
   const User = sequelize.define('User', {
     fullName: DataTypes.STRING,
     email: DataTypes.STRING,
+    phoneNum: DataTypes.STRING,
   });
   (async () => {
     await sequelize.sync({ force: true }); // toda vez que o servidor for reiniciado, a tabela será recriada. Isso é útil para testes, mas não para produção.
