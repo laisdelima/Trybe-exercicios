@@ -1,7 +1,8 @@
 'use strict';
 
-// o arquivo index estabelece uma instância de conexão entre os arquivos presentes na pasta model e o banco de dados relacional utilizado.
-
+// o arquivo index estabelece uma instância de conexão entre os arquivos presentes na pasta model e o banco de dados relacional utilizado, por meio do arquivo config.js.
+// coleta os modelos definidos dentro da pasta models.
+// caso necessário, associa os modelos entre si.
 const fs = require('fs');
 const path = require('path');
 const Sequelize = require('sequelize');
