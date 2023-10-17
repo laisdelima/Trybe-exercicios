@@ -30,10 +30,17 @@ const remove = async (id) => {
   return removedBook;
 }
 
+const getByAuthor = async (author) => {
+  const book = await Book.findAll({ where: { author } });
+
+  return book;
+}
+
 module.exports = {
   getAll,
   getById,
   create,
   update,
   remove,
+  getByAuthor,
 };
