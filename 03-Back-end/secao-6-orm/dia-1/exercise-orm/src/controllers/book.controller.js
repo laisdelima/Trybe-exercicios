@@ -1,13 +1,17 @@
 const BookService = require('../services/book.service');
 
-const getAll = async (_req, res) => {
-  try {
-    const books = await BookService.getAll();
-    return res.status(200).json(books);
-  } catch (e) {
-    console.log(e.message);
-    res.status(500).json({ message: 'Ocorreu um erro' });
+const getAll = async (req, res) => {
+  const { author } = req.query;
+
+  let books;
+
+  if (author) {
+    books = await BookService.getByAuthor(author);
+  } else {
+    books = await BookService.getAll();
   }
+
+  res.status(200).json(books);
 }
 
 const getById = async (req, res) => {
