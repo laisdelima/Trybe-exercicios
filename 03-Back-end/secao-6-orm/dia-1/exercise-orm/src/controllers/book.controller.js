@@ -24,7 +24,7 @@ const getById = async (req, res) => {
 const create = async (req, res) => {
   const { title, author, pageQuantity } = req.body;
 
-  const newBook = await BookService.create({ title, author, pageQuantity });
+  const newBook = await BookService.create(title, author, pageQuantity);
 
   return res.status(201).json(newBook);
 }
