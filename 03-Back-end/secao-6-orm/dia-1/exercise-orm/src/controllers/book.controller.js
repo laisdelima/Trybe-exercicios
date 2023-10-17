@@ -21,7 +21,16 @@ const getById = async (req, res) => {
   return res.status(200).json(book);
 }
 
+const create = async (req, res) => {
+  const { title, author, pageQuantity } = req.body;
+
+  const newBook = await BookService.create({ title, author, pageQuantity });
+
+  return res.status(201).json(newBook);
+}
+
 module.exports = {
   getAll,
   getById,
+  create,
 };
