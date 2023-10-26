@@ -3,12 +3,7 @@ const UserModel = (sequelize, DataTypes) => {
     fullName: DataTypes.STRING,
     email: DataTypes.STRING,
     phoneNum: DataTypes.STRING,
-  },
-  {
-    timestamps: false,
-    underscored: true,
-  }
-  );
+  });
 
   return User;
 };
