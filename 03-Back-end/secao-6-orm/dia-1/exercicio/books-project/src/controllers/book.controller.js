@@ -1,8 +1,17 @@
-const Book = require('../models/books.mode');
 const BookService = require ('../services/book.service');
 
 const getAll = async (req, res) => {
-  const books = await BookService.getAll();
+  const { author } = req.body;
+
+  let books;
+
+  if (author) {
+    books = await BookService.getByAuthor(author);
+    console.log(books);
+  } else {
+    books = await BookService.getAll();
+  }
+
   return res.status(200).json(books);
 };
 
