@@ -13,7 +13,7 @@ module.exports = (sequelize, DataTypes) => {
 
   Employee.associate = (models) => {
     Employee.hasOne(models.Address,
-      { foreignKey: 'employeeId', as: 'addresses' });
+      { foreignKey: 'employeeId', as: 'addresses' }); // a tabela employees tem uma chave estrangeira chamada employeeId, que referencia a tabela addresses. O nome da chave estrangeira na tabela addresses é employeeId.
   };
 
   return Employee;
