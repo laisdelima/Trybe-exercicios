@@ -10,6 +10,21 @@ const getAll = async (_req, res) => {
   }
 };
 
+const getById = async (req, res) => {
+  try {
+    const { id }= req.params;
+    const employees = await EmployeeService.getById(id);
+
+    if (!employees) {
+      return res.status(404).json({ message: 'Pessoa não encontrada' });
+    }
+    return res.status(200).json(employees);
+  } catch (e) {
+    res.status(500).json({ message: 'Ocorreu um erro' });
+  };
+}
+
 module.exports = {
   getAll,
+  getById,
 };
