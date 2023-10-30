@@ -1,4 +1,5 @@
 const EmployeeService = require('../services/employee.service');
+const AddressService = require('../services/addresses.service');
 
 const getAll = async (_req, res) => {
   try {
@@ -13,12 +14,19 @@ const getAll = async (_req, res) => {
 const getById = async (req, res) => {
   try {
     const { id }= req.params;
-    const employees = await EmployeeService.getById(id);
+    const { includeAddresses } = req.query;
+    const employee = await EmployeeService.getById(id);
 
-    if (!employees) {
+    if (!employee) {
       return res.status(404).json({ message: 'Pessoa não encontrada' });
     }
-    return res.status(200).json(employees);
+
+    if (includeAddresses === 'true') {
+      const addresses = await AddressService.getAllByEmployeeId(id);
+      return res.status(200).json({ employee, addresses });
+    }
+
+    return res.status(200).json(employee);
   } catch (e) {
     res.status(500).json({ message: 'Ocorreu um erro' });
   };
