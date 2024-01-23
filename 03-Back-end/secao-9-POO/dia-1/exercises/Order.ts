@@ -49,5 +49,20 @@ export default class Order {
     if (value < 0) {
       throw new Error('The discount cannot be a negative value!')
     }
+    this._discount = value;
+  }
+
+  calculateTotal(): number {
+    return this._order
+      .reduce((previousValue, item) => {
+        const total = previousValue + item.getPrice();
+
+        return total;
+      }, 0);
+  }
+
+  calculateWithDiscount(): number {
+    return this.calculateTotal() * (1 - this._discount);
   }
 }
+
