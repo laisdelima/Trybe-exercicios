@@ -16,8 +16,10 @@ bigger(num_one, num_two)
 
 # outra maneira:
 
+
 def bigger_number(num1, num2):
     return max(num1, num2)
+
 
 num1 = 10
 num2 = 35
@@ -35,17 +37,20 @@ def average(list):
     average_calc = summ / len(list)
     return average_calc
 
+
 list_values = [10, 20, 30, 40]
 total = average(list_values)
-total_int = int(total) # ou round(total)
+total_int = int(total)  # ou round(total)
 print(f"A média aritmética dos valores é: {total_int}")
 
 
 # Exercício 3: Faça um programa que, dado um valor n qualquer, tal que n > 1, imprima na tela um quadrado feito de asteriscos de lado de tamanho n.
 
+
 def square(n):
     for row in range(n):
-        print(n * '*')
+        print(n * "*")
+
 
 n = int(input("Digite um número: "))
 square(n)
@@ -53,13 +58,15 @@ square(n)
 
 # 🚀 Exercício 4: Crie uma função que receba uma lista de nomes e retorne o nome com a maior quantidade de caracteres. Por exemplo, para ["José", "Lucas", "Nádia", "Fernanda", "Cairo", "Joana"], o retorno deve ser "Fernanda".
 
+
 def biggest_char(names):
     biggest_name = names[0]
     for name in names:
         if len(name) > len(biggest_name):
             biggest_name = name
     return biggest_name
-    
+
+
 list = ["José", "Lucas", "Nádia", "Fernanda", "Cairo", "Joana"]
 biggest_name = biggest_char(list)
 print(f"O maior nome na lista é: {biggest_name}")
