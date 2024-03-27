@@ -110,7 +110,7 @@ Aqui estão todos os exercícios realizados por _[mim](https://linkedin.com/in/l
 - [X] 1-3: _Usando o Redux no React - Prática_
 - [X] 1-4: _Usando o Redux no React - Actions Assíncrono_
 - [X] 1-5: _Testes em React-Redux_
-- [ ] 1-6: _Projeto - Trybe Wallet_
+- [X] 1-6: _Projeto - Trybe Wallet_
 
 ##### Bloco 8: Projeto Jogo de Trivia
 
@@ -140,40 +140,60 @@ Aqui estão todos os exercícios realizados por _[mim](https://linkedin.com/in/l
 ##### Bloco 2: Introdução à SQL
 
 - [X] 2-1: _Banco de Dados SQL_
-- [X] 2-2: _Encontrando dados em um banco de dados_
-- [X] 2-3: _Filtrando dados de forma específica_
-- [X] 2-4: _Manipulando tabelas_
-- [X] 2-5: _Projeto - All For One_
+- [X] 2-2: _Como atualizar e remover dados de um banco_
+- [X] 2-3: _Relacionamentos - Parte 1_
+- [X] 2-4: _Relacionamentos - Parte 2_
+- [X] 2-5: _Relacionamentos - Parte 3 e Relatórios Avaçados_
+- [X] 2-6: _Projeto: Trybefy_
 
-##### Bloco 3: Funções SQL, JOINs e Normalização
+##### Bloco 3: Introdução ao desenvolvimento Web com Node.js
 
-- [X] 3-1: _Funções mais usadas no SQL_
-- [X] 3-2: _Descomplicando JOINs_
-- [X] 3-3: _Transformando ideias em um modelo de banco de dados_
-- [X] 3-4: _Aula ao vivo + Projeto - One For All_
+- [X] 3-1: _Node.js: Runtime assíncrono_
+- [X] 3-2: _Node.js: API Rest com Express_
+- [X] 3-3: _Node.js: Testes de integração_
+- [X] 3-4: _Node.js: Express e Middlewares_
+- [X] 3-5: _Node.js: Express e MySQL_
+- [X] 3-6: _Projeto: Talker Manager_
 
-##### Bloco 4: Introdução ao desenvolvimento Web com Node.js
+##### Bloco 4: Arquitetura de Software: Model, Service e Controller
 
-- [X] 4-1: _Node.js: Runtime assíncrono_
-- [X] 4-2: _Node.js: API Rest com Express_
-- [X] 4-3: _Node.js: Testes de integração_
-- [X] 4-4: _Node.js: Express e Middlewares_
-- [X] 4-5: _Node.js: Express e MySQL_
-- [X] 4-6: _Projeto: Talker Manager_
+- [X] 4-1: _Arquitetura de Software: Camada Model_
+- [X] 4-2: _Arquitetura de Software: Refatorando Camada Model_
+- [X] 4-3: _Arquitetura de Software: Camada Service_
+- [X] 4-4: _Arquitetura de Software: Refatorando Camada Service_
+- [X] 4-5: _Arquitetura de Software: Refatorando Camada Controller_
+- [X] 4-6: _Projeto: Store Manager_
 
-##### Bloco 5: Arquitetura de software: model, service e controller
+##### Bloco 5: Node.js: ORM e Autenticação
 
-- [X] 5-1: _Arquitetura de Software: camada model_
-- [X] 5-2: _Arquitetura de Software: refatorando camada model_
-- [X] 5-3: _Arquitetura de Software: camada service_
-- [X] 5-4: _Arquitetura de Software: refatorando camada service_
-- [X] 5-5: _Arquitetura de Software: refatorando camada controller_
-- [X] 5-6: _Projeto - Store Manager_
+- [X] 5-1: _ORM: interface da aplicação com o banco de dados_
+- [X] 5-2: _ORM: associations 1:1 e 1:N_
+- [X] 5-3: _ORM: associations N:N e transactions_
+- [X] 5-4: _JWT (JSON Web Token)_
+- [X] 5-5: _Projeto: API de Blogs_
 
-##### Bloco 6: Node.js: ORM e autenticação
+##### Bloco 6: Masterclass: Implantação de Aplicações da Nuvem
 
-- [X] 6-1: _ORM: interface da aplicação com o banco de dados_
-- [X] 6-2: _ORM: associations 1:1 e 1:N_
-- [X] 6-3: _ORM: associations N:N e transactions_
-- [X] 6-4: _JWT (JSON Web Token)_
-- [X] 6-5: _Projeto: API de Blogs_
+- [X] 6-1: _Infraestrutura: Deploy com Railway_
+
+##### Bloco 7: Introdução a TypeScript
+
+- [X] 7-1: _Aprendendo TypeScript_
+- [X] 7-2: _Itrodução a Generics_
+- [X] 7-3: _API REST com Express, JWT, Sequelize e TypeScript_
+- [X] 7-4: _Testando Aplicações com TypeScript_
+- [X] 7-5: _Projeto: TrybeSmith_
+
+##### Bloco 8: Programação Orientada a Objetos (POO) e SOLID
+
+- [X] 8-1: _Introdução à Orientação a Objetos_
+- [X] 8-2: _Herança e Composição_
+- [X] 8-3: _Polimorfismo_
+- [X] 8-4: _SOLID: Introdução e rincípios S, O e D_
+- [X] 8-5: _SOLID: Princípios L e I_
+- [ ] 8-6: _Projeto: Trybers and Dragons_
+
+##### Bloco 9: Projeto - TFC - Trybe Futebol Clube
+
+- [ ] 9-1: _Express com Classes_
+- [ ] 9-2: _Projeto TFC_
