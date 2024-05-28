@@ -191,9 +191,40 @@ Aqui estão todos os exercícios realizados por _[mim](https://linkedin.com/in/l
 - [X] 8-3: _Polimorfismo_
 - [X] 8-4: _SOLID: Introdução e rincípios S, O e D_
 - [X] 8-5: _SOLID: Princípios L e I_
-- [ ] 8-6: _Projeto: Trybers and Dragons_
+- [X] 8-6: _Projeto: Trybers and Dragons_
 
 ##### Bloco 9: Projeto - TFC - Trybe Futebol Clube
 
-- [ ] 9-1: _Express com Classes_
-- [ ] 9-2: _Projeto TFC_
+- [X] 9-1: _Express com Classes_
+- [X] 9-2: _Projeto TFC_
+
+
+## Ciência da Computação
+
+##### Bloco 1: Introdução a Python
+
+- [ ] 1-1: _Aprendendo Python_
+- [ ] 1-2: _Entrada e saída de dados com testes_
+- [ ] 1-3: _POO em Python_
+- [ ] 1-4: _Projeto: Job Insights_
+
+##### Bloco 2: Algoritmos
+
+- [ ] 2-1: _Complexidade de Algoritmos_
+- [ ] 2-2: _Recursividade e estratégias para solução de problemas_
+- [ ] 2-3: _Algoritmos de ordenação e busca_
+- [ ] 2-4: _Projeto: Algoritmos_
+
+##### Bloco 3: Estrutura de Dados I: Listas Lineares
+
+- [ ] 3-1: _Arrays_
+- [ ] 3-2: _Nó e Listas Encadeadas_
+- [ ] 3-3: _Pilhas e Filas_
+- [ ] 3-4: _Projeto: TING - Trybe Is Not Google_
+
+##### Bloco 4: Estrutura de Dados II: Hashmaps e Sets
+
+- [ ] 4-1: _Hashmap e Dict_
+- [ ] 4-2: _Set_
+- [ ] 4-3: _Projeto: Restaurant Orders_
+
