@@ -203,28 +203,28 @@ Aqui estão todos os exercícios realizados por _[mim](https://linkedin.com/in/l
 
 ##### Bloco 1: Introdução a Python
 
-- [ ] 1-1: _Aprendendo Python_
-- [ ] 1-2: _Entrada e saída de dados com testes_
-- [ ] 1-3: _POO em Python_
-- [ ] 1-4: _Projeto: Job Insights_
+- [X] 1-1: _Aprendendo Python_
+- [X] 1-2: _Entrada e saída de dados com testes_
+- [X] 1-3: _POO em Python_
+- [X] 1-4: _Projeto: Job Insights_
 
 ##### Bloco 2: Algoritmos
 
-- [ ] 2-1: _Complexidade de Algoritmos_
-- [ ] 2-2: _Recursividade e estratégias para solução de problemas_
-- [ ] 2-3: _Algoritmos de ordenação e busca_
-- [ ] 2-4: _Projeto: Algoritmos_
+- [X] 2-1: _Complexidade de Algoritmos_
+- [X] 2-2: _Recursividade e estratégias para solução de problemas_
+- [X] 2-3: _Algoritmos de ordenação e busca_
+- [X] 2-4: _Projeto: Algoritmos_
 
 ##### Bloco 3: Estrutura de Dados I: Listas Lineares
 
-- [ ] 3-1: _Arrays_
-- [ ] 3-2: _Nó e Listas Encadeadas_
-- [ ] 3-3: _Pilhas e Filas_
-- [ ] 3-4: _Projeto: TING - Trybe Is Not Google_
+- [X] 3-1: _Arrays_
+- [X] 3-2: _Nó e Listas Encadeadas_
+- [X] 3-3: _Pilhas e Filas_
+- [X] 3-4: _Projeto: TING - Trybe Is Not Google_
 
 ##### Bloco 4: Estrutura de Dados II: Hashmaps e Sets
 
-- [ ] 4-1: _Hashmap e Dict_
-- [ ] 4-2: _Set_
-- [ ] 4-3: _Projeto: Restaurant Orders_
+- [X] 4-1: _Hashmap e Dict_
+- [X] 4-2: _Set_
+- [X] 4-3: _Projeto: Restaurant Orders_
 
